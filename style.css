@@ -1,6 +1,12 @@
+/* ============================= */
+/* CONFIGURAÇÃO GERAL            */
+/* ============================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
 html,
 body {
@@ -13,6 +19,11 @@ body {
     font-family: "Times New Roman", Times, serif !important;
 }
 
+
+/* ============================= */
+/* CORPO                         */
+/* ============================= */
+
 body {
     display: block !important;
 
@@ -24,6 +35,11 @@ body {
 
     padding: 0 !important;
 }
+
+
+/* ============================= */
+/* CAIXA PRINCIPAL               */
+/* ============================= */
 
 .caixa-principal {
     display: block !important;
@@ -42,6 +58,11 @@ body {
 
     text-align: left !important;
 }
+
+
+/* ============================= */
+/* TÍTULO                        */
+/* ============================= */
 
 .caixa-principal h1,
 h1 {
@@ -74,6 +95,11 @@ h1 {
     line-height: 1.2 !important;
 }
 
+
+/* ============================= */
+/* PERGUNTAS                     */
+/* ============================= */
+
 .caixa-perguntas {
     display: block !important;
 
@@ -97,6 +123,11 @@ h1 {
     text-align: left !important;
 }
 
+
+/* ============================= */
+/* ALTERNATIVAS                  */
+/* ============================= */
+
 .caixa-alternativas {
     display: block !important;
 
@@ -110,6 +141,11 @@ h1 {
 
     text-align: left !important;
 }
+
+
+/* ============================= */
+/* BOTÕES                        */
+/* ============================= */
 
 button {
     display: inline-block !important;
@@ -158,6 +194,11 @@ button:active {
     color: black !important;
 }
 
+
+/* ============================= */
+/* RESULTADO                     */
+/* ============================= */
+
 .texto-resultado {
     color: black !important;
 
@@ -178,6 +219,11 @@ button:active {
 
     font-weight: bold !important;
 }
+
+
+/* ============================= */
+/* BARRA DE PROGRESSO            */
+/* ============================= */
 
 .progresso {
     display: block !important;
