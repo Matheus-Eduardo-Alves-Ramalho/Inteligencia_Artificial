@@ -1,127 +1,196 @@
-:root {
-    --cor-fundo: #ffffff;
-    --cor-principal: #ffa500;
-    --cor-texto: #000000;
-    --cor-borda: #ff0000;
-}
-
-* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+
+    background: white !important;
+    color: black !important;
+
+    font-family: "Times New Roman", Times, serif !important;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    display: block !important;
 
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    background-color: white !important;
 
-    font-family: Arial, sans-serif;
+    color: black !important;
 
-    min-height: 100vh;
+    min-height: 100vh !important;
+
+    padding: 0 !important;
 }
 
 .caixa-principal {
-    width: 100%;
-    max-width: none;
+    display: block !important;
 
-    padding: 0;
+    width: 100% !important;
+    max-width: none !important;
 
-    text-align: left;
+    min-height: 100vh;
 
-    background-color: #ffffff;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background-color: white !important;
+
+    color: black !important;
+
+    text-align: left !important;
 }
 
+.caixa-principal h1,
 h1 {
-    margin: 0;
+    display: block !important;
 
-    padding: 10px 15px;
+    width: calc(100% - 6px) !important;
 
-    background-color: var(--cor-principal);
-    color: #000000;
+    margin: 0 3px !important;
 
-    border: 2px solid var(--cor-borda);
-    border-bottom: 6px dotted #000000;
+    padding: 10px 12px !important;
 
-    border-radius: 22px 22px 15px 15px;
+    background-color: #ffa500 !important;
 
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 38px;
-    font-weight: bold;
+    color: black !important;
 
-    line-height: 1.2;
+    border: 2px solid red !important;
+
+    border-radius: 0 22px 15px 15px !important;
+
+    border-bottom: 6px dotted black !important;
+
+    font-family: "Times New Roman", Times, serif !important;
+
+    font-size: 38px !important;
+
+    font-weight: bold !important;
+
+    text-align: left !important;
+
+    line-height: 1.2 !important;
 }
 
 .caixa-perguntas {
-    margin-top: 28px;
-    margin-bottom: 5px;
+    display: block !important;
 
-    padding: 0 4px;
+    width: 100% !important;
 
-    color: #000000;
+    margin-top: 28px !important;
+    margin-bottom: 5px !important;
 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    padding: 0 3px !important;
 
-    line-height: 1.5em;
+    background: white !important;
+
+    color: black !important;
+
+    font-family: "Times New Roman", Times, serif !important;
+
+    font-size: 16px !important;
+
+    line-height: normal !important;
+
+    text-align: left !important;
+}
+
+.caixa-alternativas {
+    display: block !important;
+
+    width: 100% !important;
+
+    padding: 0 3px !important;
+
+    background-color: white !important;
+
+    color: black !important;
+
+    text-align: left !important;
 }
 
 button {
-    background-color: #f0f0f0;
+    display: inline-block !important;
 
-    color: #000000;
+    background-color: #efefef !important;
 
-    border: 1px solid #777777;
-    border-radius: 2px;
+    color: black !important;
 
-    padding: 3px 8px;
+    border: 1px solid #767676 !important;
 
-    margin: 0 0 0 3px;
+    border-radius: 2px !important;
 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    padding: 2px 6px !important;
 
-    cursor: pointer;
+    margin: 0 0 0 0 !important;
 
-    transition: background-color 0.2s;
+    width: auto !important;
+    height: auto !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 16px !important;
+
+    font-weight: normal !important;
+
+    line-height: normal !important;
+
+    text-align: center !important;
+
+    cursor: pointer !important;
+
+    box-shadow: none !important;
 }
+
 
 button:hover {
-    background-color: #e0e0e0;
-    color: #000000;
+    background-color: #e5e5e5 !important;
+
+    color: black !important;
 }
 
+
 button:active {
-    background-color: #cccccc;
+    background-color: #d5d5d5 !important;
+
+    color: black !important;
 }
 
 .texto-resultado {
-    color: #000000;
+    color: black !important;
 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    background: white !important;
 
-    line-height: 1.5em;
+    font-family: "Times New Roman", Times, serif !important;
+
+    font-size: 16px !important;
+
+    text-align: left !important;
 }
 
+
 .texto-resultado b {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    color: black !important;
 
-    color: #000000;
+    font-family: "Times New Roman", Times, serif !important;
 
-    line-height: 1.5em;
+    font-weight: bold !important;
 }
 
 .progresso {
-    width: 90%;
+    display: block !important;
 
-    height: 26px;
+    width: 90% !important;
 
-    margin: 10px auto;
+    height: 27px !important;
 
-    background-color: #b7c7dc;
+    margin: 10px auto !important;
 
-    border: 1px solid red;
-    border-radius: 15px;
+    background-color: #b7c7dc !important;
+
+    border: 1px solid red !important;
+
+    border-radius: 15px !important;
 }
