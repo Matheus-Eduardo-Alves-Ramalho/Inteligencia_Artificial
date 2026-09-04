@@ -5,141 +5,92 @@
 body {
     margin: 0;
     padding: 0;
-
     background-color: white;
     color: black;
-
     font-family: "Times New Roman", Times, serif;
-
     min-height: 100vh;
 }
 
 .caixa-principal {
     width: 100%;
     max-width: none;
-
     margin: 0;
     padding: 0;
-
     background-color: white;
-
     text-align: left;
 }
 
 h1 {
     width: calc(100% - 6px);
-
     margin: 0 3px;
-
     padding: 10px 12px;
-
     background-color: orange;
-
     color: black;
-
     font-family: "Times New Roman", Times, serif;
-
     font-size: 38px;
-
     font-weight: bold;
-
     line-height: 1.2;
-
     text-align: left;
-
     border: 2px solid red;
-
     border-bottom: 6px dotted black;
-
     border-radius: 22px 22px 15px 15px;
 }
 
 .caixa-perguntas {
     margin-top: 28px;
-
     padding-left: 3px;
     padding-right: 3px;
-
     color: black;
-
     background-color: white;
-
     font-family: "Times New Roman", Times, serif;
-
     font-size: 16px;
-
     line-height: normal;
-
     text-align: left;
 }
 
 .caixa-alternativas {
     padding-left: 3px;
     padding-right: 3px;
-
     margin-top: 0;
-
     background-color: white;
-
     text-align: left;
 }
 
 button {
     background-color: #efefef;
-
     color: black;
-
     font-family: Arial, sans-serif;
-
     font-size: 16px;
-
     font-weight: normal;
-
     padding: 2px 6px;
-
     margin: 0;
-
     border: 1px solid #767676;
-
     border-radius: 2px;
-
     cursor: pointer;
-
     line-height: normal;
 }
 
 button:hover {
     background-color: #e5e5e5;
-
     color: black;
 }
 
 .caixa-resultado {
-    background-color: white;
-
+    backgrognd-color: white;
     color: black;
-
     margin-top: 20px;
-
     padding-left: 3px;
 }
 
-
 .texto-resultado {
     color: black;
-
     font-family: "Times New Roman", Times, serif;
-
     font-size: 16px;
-
     line-height: normal;
 }
 
-
 .texto-resultado b {
     color: black;
-
     font-family: "Times New Roman", Times, serif;
-
     font-weight: bold;
 }
