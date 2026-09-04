@@ -1,12 +1,18 @@
-:root{
+:root {
     --cor-fundo: #01080E;
-    --cor-principal: #0B0D20 ;
+    --cor-principal: #0B0D20;
     --cor-secundaria: #212333;
     --cor-destaque: #2BDEFD;
     --cor-texto: #D7F9FF;
 }
 
-body{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
@@ -14,46 +20,168 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: "Inter", sans-serif;
-}
-
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
     padding: 20px;
 }
 
-.caixa-perguntas{
-    margin-bottom: 15px;
-    line-height: 1.5em;
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-h1{
-    color: var(--cor-destaque);
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
-button{
+.icone-codigo {
     background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
-    margin:5px;
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 16px;
-}
-
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
-
-}
-
-.texto-resultado b{
+    color: var(--cor-destaque);
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 2px;
     color: var(--cor-destaque);
-    line-height: 1.5em;
+    display: block;
+}
+
+h1 {
+    font-family: "Chakra Petch", sans-serif;
+    color: var(--cor-texto);
+    font-size: 24px;
+}
+
+/* Barra de Progresso */
+.progresso-container {
+    margin-bottom: 25px;
+}
+
+.progresso-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #8A94A6;
+}
+
+.progresso {
+    background-color: var(--cor-secundaria);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progresso-barra {
+    background-color: var(--cor-destaque);
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Pergunta */
+.label-pergunta {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--cor-destaque);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.caixa-perguntas {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+/* Alternativas */
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 16px 20px;
+    transition: all 0.2s ease;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border-color: var(--cor-destaque);
+    color: var(--cor-destaque);
+}
+
+/* Tela de Resultado */
+.caixa-resultado {
+    display: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.resultado-icone {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 15px auto;
+}
+
+.resultado-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--cor-destaque);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.texto-resultado {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.texto-resultado b {
+    color: var(--cor-destaque);
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.botao-reiniciar {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.botao-reiniciar:hover {
+    background-color: #82eaff;
+    color: var(--cor-principal);
 }
